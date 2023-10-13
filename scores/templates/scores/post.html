@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}{{post.name}}{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>{{post.name}}</h1>
+    <img class='post-image' src='{{post.image}}'>
+    <p>Возраст: {{post.age}}</p>
+    <p>Лицо: {{post.face}}</p>
+    <p>Фигура: {{post.figure}}</p>
+    <p>Тема сисек: {{post.tits}}</p>
+    <p>Жопа: {{post.ass}}</p>
+    {% if post.cat %}
+       <p>Категория: {{post.cat}}</p>
+    {% endif %}
+</div>
+
+
+{% endblock %}

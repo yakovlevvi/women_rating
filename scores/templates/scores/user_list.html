@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Список пользователей{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Список пользователей</h1>
+        <ul>
+            {% for user in users %}
+                <a href="{{ user.get_absolute_url }}"><li><img class="profile-image" src="{{ user.profile_image }}" alt=""><br>{{ user.username }}</li></a>
+
+            {% endfor %}
+        </ul>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ tyan.name }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ tyan.name }}</h1>
+        <img src="{{ tyan.image.url }}">
+        <h2>{{ tyan.rating }}</h2>
+        <p>{{tyan.date}}</p>
+    </div>
+{% endblock %}

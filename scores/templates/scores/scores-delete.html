@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Удаление{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Удаление</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}  <!-- для безопасной передачи данных -->
+            <button class="btn btn-success" type="submit">Удалить из ТОПа</button>
+        </form>
+    </div>
+
+{% endblock content %}

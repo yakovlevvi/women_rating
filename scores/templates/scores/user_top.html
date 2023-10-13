@@ -1,0 +1,11 @@
+{% extends 'main/layout.html' %}
+{% load scores_tags %}
+
+{% block title %}{{ user.username }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{user.username}}</h1>
+        <a href="{% url 'user_scores' user.username %}" class="btn btn-warning">Топ пользователя</a>
+    </div>
+{% endblock %}

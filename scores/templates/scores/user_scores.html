@@ -1,0 +1,51 @@
+{% extends 'main/layout.html' %}
+{% load scores_tags %}
+
+{% block title %}ТОП{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>ТОП {{current_user}}</h1>
+        {% if members %}
+            {% for el in members %}
+                <div class="card">
+                    <h3>{{ el.name }}</h3>
+                    {% if el.cat %}
+                        <h6>Категория: {{ el.cat }}</h6>
+                    {% endif %}
+                    <img class='tyan-photo' src="{{ el.image }}">
+                    <h4> {{ el.rating }} </h4>
+                    <a href="{{ el.get_absolute_url }}" class="btn btn-warning">Подробнее</a>
+                </div>
+            {% endfor %}
+        {% if page_obj.has_other_pages %}
+            <nav class="list-pages">
+                <ul>
+                    {% if page_obj.has_previous %}
+                    <li class="page-num">
+                        <a href="?page={{ page_obj.previous_page_number }}">&lt;</a>
+                    </li>
+                    {% endif %}
+                    {% for p in paginator.page_range %}
+                        {% if page_obj.number == p %}
+                            <li class="page-num page-num-selected">{{ p }}</li>
+                        {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2 %}
+                            <li class="page-num">
+                                <a href="?page={{ p }}">{{ p }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                    <li class="page-num">
+                        <a href="?page={{ page_obj.next_page_number }}">&gt;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        {% endif %}
+        {% else %}
+            <p>Пока пусто</p>
+        {% endif %}
+        {# Комментарий #}
+    </div>
+{% endblock %}

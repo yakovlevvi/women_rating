@@ -1,0 +1,152 @@
+body {
+    background: #f5e3b3;
+}
+
+aside {
+    float: left;
+    background: #B8AE93;
+    width: 30%;
+    max-width: 250px;
+    padding: 2.5%;
+    height: 100vh;
+    color: #000;
+    border-right: 5px solid #9F843A;
+    text-align: center;
+}
+
+aside img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+aside .logo {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 10px;
+    margin-top: 20px
+}
+
+aside h3 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+aside ul {
+    list-style: none;
+    text-align: left;
+}
+
+aside ul li {
+    color: #000;
+    display: block;
+    margin-top: 10px;
+    transition: transform .2s ease;
+}
+
+aside ul a {
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #2A316E;
+    display: block;
+    margin-top: 10px;
+    transform: scale(1.05);
+}
+
+.features {
+    float: left;
+    color: #000;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {font-size: 50px;}
+
+main .features p {
+    max-width: 400px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: center;
+}
+
+.tyan-photo {
+    width: 300px;
+    margin: auto;
+}
+
+.post-image {
+    width: 500px;
+    margin: auto;
+}
+
+form {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.label {
+    margin: 10px;
+}
+
+.card {
+    background: #b8ae93;
+    width: 400px;
+    margin: 50px auto;
+}
+
+.selected {color: grey}
+
+.list-pages {
+	text-align: center;
+	margin: 0 0 0 0;
+}
+
+.list-pages ul {
+	margin: 0 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+.list-pages ul li {
+	display: inline-block;
+	margin: 0 0 0 0;
+	display: flex;
+}
+.list-pages a {
+	color: #000;
+	font-size: 24px;
+	text-decoration: none;
+}
+.list-pages .page-num, .page-num-selected {
+	display: inline-block;
+	width: 60px;
+	height: 44px;
+	padding: 0;
+	border: 1px solid #d0d0d0;
+	border-radius: 30px;
+}
+.list-pages .page-num:hover {
+	box-shadow: 3px 3px 1px #d0d0d0;
+}
+.list-pages .page-num-selected {
+	border: none;
+	color: #000;
+	font-size: 20px;
+}
+.list-pages .page-num-selected:hover {
+	box-shadow: none;
+}
+
+.profile-image {
+    width: 200px;
+    margin: auto;
+}

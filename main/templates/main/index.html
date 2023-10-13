@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Тин чарт без Ники Исаевой и Никиты Потапова</p>
+        <p>Слева находится главное меню</p>
+        <p>Пока вы не зареганы, можно только зайти в "Пользователи" и посмотреть Чарты других пользователей</p>
+        <p>А можно создать свой Чарт и посмотреть его во вкладке "Мой чарт", но сначала <b>зарегистрируйся</b>!</p>
+        <p>Чтобы добавлять в чарт, необходимо <b>войти или зарегаться</b>, иначе вылезет 403</p>
+
+
+        <a href="{% url 'scores_home' %}" class="btn btn-info">Перейти в ТОП</a><br><br>
+        <a href="{% url 'about' %}" class="btn btn-warning">На страницу про нас</a>
+
+        {% for el in values %}  <!-- передача данных (data в файле views.py)-->
+            {% if el == 'Hello' %}
+                {% filter upper %}
+                    <p>{{ el|upper }}</p>  <!-- фильтр -->
+                {% endfilter %}
+            {% endif %}
+        {% endfor %}
+
+
+    </div>
+{% endblock %}
