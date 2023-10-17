@@ -1,0 +1,10 @@
+/.vscode
+/src/env
+/env
+__pycache__
+/venv
+../.idea
+*.jpg
+*.mp4
+.pytest_cache
+*.sqlite3
