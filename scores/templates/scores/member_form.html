@@ -9,20 +9,10 @@
             {% csrf_token %}  <!-- для безопасной передачи данных -->
             <p class="label">Имя</p>
             {{ form.name }}
-            <p class="label">URL</p>
-            {{ form.slug }}
             <p class="label">Возраст</p>
             {{ form.age }}
-            <p>Лицо</p>
-            {{ form.face }}
-            <p>Фигура</p>
-            {{ form.figure }}
-            <p>Тема сисек</p>
-            {{ form.tits }}
-            <p>Жопа</p>
-            {{ form.ass }}
             <p>Фото</p>
-            {{ form.image }}
+            {{ form.photo }}
             <p>Категория</p>
             {{ form.cat }}<br>
             <span>{{ error }}</span>

@@ -5,14 +5,15 @@
 {% block content %}
 <div class="features">
     <h1>Обратная связь</h1>
+    <p>(Пока на стадии разработки)</p>
     <form method="post">
         {% csrf_token %}
         <div class="form-error">{{ form.non_field_errors }}</div>
-        {% for f in form %}
-            <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
-            <div class="form-error">{{ f.errors }}</div>
-        {% endfor %}
-        <button type="submit">Отправить</button>
+        <p class="label">Имя</p>
+        {{ form.name }} <br>
+        <p class="label">Сообщение</p>
+        {{ form.content }} <br>
+        <button type="submit" class="btn btn-warning">Отправить</button>
     </form>
 </div>
 {% endblock %}

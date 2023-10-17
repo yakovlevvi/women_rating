@@ -19,3 +19,8 @@ def show_categories(sort=None, cat_selected=0):
     else:
         cats = Category.objects.order_by(sort)
     return {"cats": cats, "cat_selected": cat_selected}
+
+
+@register.filter
+def has_rated(article, user):
+    return article.ratings.filter(id=user.id).exists()

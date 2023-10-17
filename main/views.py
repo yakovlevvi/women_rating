@@ -20,10 +20,6 @@ def about(request):
     return render(request, 'main/about.html')
 
 
-# def contacts(request):
-#     return render(request, 'main/contacts.html')
-
-
 class ContactFormView(DataMixin, FormView):
     form_class = ContactForm
     template_name = 'main/contacts.html'

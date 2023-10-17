@@ -7,15 +7,14 @@
     <h1>Регистрация</h1>
     <form method="post">
         {% csrf_token %}
-        {% csrf_token %}  <!-- для безопасной передачи данных -->
             <p class="label">Логин</p>
-            {{ form.username }}
+            {{ form.username }} <br>
             <p class="label">Фото профиля</p>
-            {{ form.profile_image }}
+            {{ form.profile_image }} <br>
             <p class="label">Пароль</p>
-            {{ form.password1 }}
+            {{ form.password1 }} <br>
             <p>Подтверждение пароля</p>
-            {{ form.password2 }}<br><br>
+            {{ form.password2 }}<br>
             <span>{{ error }}</span>
             <button class="btn btn-success" type="submit">Регистрация</button>
     </form>

@@ -1,54 +1,45 @@
 from django import forms
-from .models import Tyans, Category
+from django.utils.text import slugify
+
+from .models import *
 from django.core.exceptions import ValidationError
 from django.contrib.auth import get_user
+from unidecode import unidecode
 
 
 class TyanForm(forms.ModelForm):
-    cat = forms.ModelChoiceField(queryset=Category.objects.all(), widget=forms.Select, empty_label="Категория не выбрана")
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['cat'].widget.attrs.update({'class': 'form-control'})
+        self.fields['cat'].empty_label = "Категория не выбрана"
 
     class Meta:
-        model = Tyans
-        fields = ['name', 'slug', 'age', 'face', 'figure', 'tits', 'ass', 'image', 'cat']
+        model = Article
+        fields = ['name', 'age', 'photo', 'cat']
 
         widgets = {
             'name': forms.TextInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Имя',
             }),
-            'slug': forms.TextInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Сюда вводить имя латиницей (name-example)',
-            }),
             'age': forms.NumberInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Возраст',
             }),
-            'face': forms.NumberInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Лицо',
-            }),
-            'figure': forms.NumberInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Фигура',
-            }),
-            'tits': forms.NumberInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Тема сисек',
-            }),
-            'ass': forms.NumberInput(attrs={
-                'class': 'form-control',
-                'placeholder': 'Жопа',
-            }),
-            'image': forms.URLInput(attrs={
+            'photo': forms.URLInput(attrs={
                 'class': 'form-control',
                 'placeholder': 'Ссылка на фото',
             }),
         }
+
+    def save(self, commit=True):
+        instance = super().save(commit=False)
+        name = self.cleaned_data.get('name')
+        if name:
+            slug = slugify(unidecode(name))
+            instance.slug = slug
+        if commit:
+            instance.save()
+        return instance
 
     def clean_title(self):
         title = self.cleaned_data['name']
@@ -56,3 +47,12 @@ class TyanForm(forms.ModelForm):
             raise ValidationError('Длина превышает 200 символов')
 
         return title
+
+
+class ArticleRatingForm(forms.ModelForm):
+    # rating = forms.DecimalField(min_value=0, max_value=10, decimal_places=1, max_digits=4, required=True)
+
+    class Meta:
+        model = ArticleRating
+        fields = ['face', 'figure', 'tits', 'ass']
+

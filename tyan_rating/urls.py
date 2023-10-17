@@ -7,6 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('captcha/', include('captcha.urls')),
     path('', include('main.urls')),
-    path('scores/', include('scores.urls')),
+    path('chart/', include('scores.urls')),
     path('users/', include('customusers.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

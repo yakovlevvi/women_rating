@@ -32,6 +32,8 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Tyans, TyanAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(TopUser)
+admin.site.register(Article)
+admin.site.register(ArticleRating)
 
 admin.site.site_title = 'Админ-панель сайта чарта индейца'
 admin.site.site_header = 'Админ-панель сайта чарта индейца'

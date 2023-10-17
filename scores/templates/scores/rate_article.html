@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+{% load scores_tags %}
+
+{% block title %}{{ article.name }}{% endblock %}
+
+{% block content %}
+  <div class="features">
+    <h2>{{ article.name }}</h2>
+    <img class='tyan-photo' src="{{ article.photo }}">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-success" type="submit">Сохранить оценку</button>
+    </form>
+
+    <a href="{% url 'article_list' %}">Назад в ТОП</a>
+  </div>
+{% endblock %}
