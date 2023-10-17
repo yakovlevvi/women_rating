@@ -184,3 +184,7 @@ form {
     margin: auto;
     border-radius: 8px;
 }
+
+.rating {
+    color: #A63800;
+}

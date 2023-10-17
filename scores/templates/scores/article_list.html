@@ -27,7 +27,7 @@
             <h2>{{ article.name }}</h2>
             <p>Возраст: {{ article.age }}</p>
             <img class='tyan-photo' src="{{ article.photo }}">
-            <p>Рейтинг: {{ article.total_rating }}</p>
+            <h3 class="rating">{{ article.total_rating }}</h3>
             <p>Оценили человек: {{ article.user_count }}</p>
             {% if request.user.is_authenticated %}
                 {% if not article|has_rated:request.user %}
