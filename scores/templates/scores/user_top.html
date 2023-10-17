@@ -4,8 +4,70 @@
 {% block title %}{{ user.username }}{% endblock %}
 
 {% block content %}
+
     <div class="features">
-        <h1>{{user.username}}</h1>
-        <a href="{% url 'user_scores' user.username %}" class="btn btn-warning">Топ пользователя</a>
+        <h1>ЧАРТ {{ user.username }}</h1>
+        <ul class="categories">
+            {% if cat_selected == 0 %}
+                <li class="selected">Все категории</li>
+            {% else %}
+                <li class="category"><a href="{% url 'article_list' %}">Все категории</a></li>
+            {% endif %}
+            {% for c in cats %}
+                {% if c.pk == cat_selected %}
+		            <li class="selected">{{c.name}}</li>
+                {% else %}
+                    <li class="category"><a href="{{ c.get_absolute_url }}">{{ c.name }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        {% if articles %}
+        {% for article in articles %}
+        <div class="card">
+            <h2>{{ article.name }}</h2>
+            <p>Возраст: {{ article.age }}</p>
+            <img class='tyan-photo' src="{{ article.photo }}">
+            <h3 class="rating">{{ article.total_rating }}</h3>
+            <p>Оценили человек: {{ article.user_count }}</p>
+            {% if request.user.is_authenticated %}
+                {% if not article|has_rated:request.user %}
+                    <a href="{% url 'rate_article' article.slug %}" class="btn btn-warning">Поставить оценку</a>
+                {% else %}
+                    <a href="{% url 'article-update' article.slug %}" class="btn btn-info">Редактировать свои оценки</a>
+                {% endif %}
+            {% else %}
+                <p>Чтобы поставить оценку, войдите в систему</p>
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        {% if page_obj.has_other_pages %}
+            <nav class="list-pages">
+                <ul>
+                    {% if page_obj.has_previous %}
+                    <li class="page-num">
+                        <a href="?page={{ page_obj.previous_page_number }}">&lt;</a>
+                    </li>
+                    {% endif %}
+                    {% for p in paginator.page_range %}
+                        {% if page_obj.number == p %}
+                            <li class="page-num page-num-selected">{{ p }}</li>
+                        {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2 %}
+                            <li class="page-num">
+                                <a href="?page={{ p }}">{{ p }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                    <li class="page-num">
+                        <a href="?page={{ page_obj.next_page_number }}">&gt;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        {% endif %}
+        {% else %}
+            <p>Пока пусто</p>
+        {% endif %}
     </div>
 {% endblock %}

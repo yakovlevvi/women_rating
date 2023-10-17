@@ -24,9 +24,9 @@ class ShowUser(DataMixin, DetailView):
 
 
 class UserScores(DataMixin, ListView):
-    model = Tyans
+    model = Article
     template_name = 'scores/user_scores.html'
-    context_object_name = 'members'
+    context_object_name = 'articles'
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -38,5 +38,5 @@ class UserScores(DataMixin, ListView):
 
     def get_queryset(self):
         current_user = self.kwargs['username']
-        members = Tyans.objects.filter(user__username=current_user).select_related('cat')
+        members = Article.objects.filter(user__username=current_user).select_related('cat')
         return sorted(members, key=lambda x: x.rating, reverse=True)
