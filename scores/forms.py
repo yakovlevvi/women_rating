@@ -50,7 +50,14 @@ class TyanForm(forms.ModelForm):
 
 
 class ArticleRatingForm(forms.ModelForm):
-    # rating = forms.DecimalField(min_value=0, max_value=10, decimal_places=1, max_digits=4, required=True)
+    face = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
+                              label='Лицо')
+    figure = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
+                                label='Фигура')
+    tits = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
+                              label='Тема сисек')
+    ass = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
+                             label='Жопа')
 
     class Meta:
         model = ArticleRating

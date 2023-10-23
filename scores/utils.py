@@ -5,11 +5,11 @@ from .models import *
 
 
 class DataMixin:
-    paginate_by = 3
+    paginate_by = 5
 
     def get_user_context(self, **kwargs):
         context = kwargs
-        cats = Category.objects.annotate(Count('tyans'))
+        cats = Category.objects.annotate(Count('article'))
         context['cats'] = cats
         if 'cat_selected' not in context:
             context['cat_selected'] = 0

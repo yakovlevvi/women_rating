@@ -134,9 +134,11 @@ form {
 	padding: 0;
 	border: 1px solid #d0d0d0;
 	border-radius: 30px;
+	transition: transform .2s ease;
 }
 .list-pages .page-num:hover {
 	box-shadow: 3px 3px 1px #d0d0d0;
+	transform: scale(1.05);
 }
 .list-pages .page-num-selected {
 	border: none;
@@ -177,6 +179,7 @@ form {
     padding: 10px;
     width: 300px;
     border: 1px solid rgba(159, 132, 58, 0.5);
+    text-decoration: none;
 }
 
 .profile-image {
@@ -186,5 +189,21 @@ form {
 }
 
 .rating {
-    color: #A63800;
+    color: black;
+}
+
+.login_note {
+    color: #675113;
+}
+
+.cat, .user-link {
+    text-decoration: none;
+    color: black;
+    transition: transform .2s ease;
+}
+
+.cat:hover, .user-link:hover {
+    color: #675113;
+    display: block;
+    transform: scale(1.05);
 }

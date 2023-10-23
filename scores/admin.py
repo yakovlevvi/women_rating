@@ -29,7 +29,6 @@ class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
 
 
-admin.site.register(Tyans, TyanAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(TopUser)
 admin.site.register(Article)
