@@ -33,5 +33,6 @@ admin.site.register(TopUser)
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(ArticleRating)
 
+
 admin.site.site_title = 'Админ-панель сайта чарта индейца'
 admin.site.site_header = 'Админ-панель сайта чарта индейца'

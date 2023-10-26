@@ -23,6 +23,7 @@
             <a href="{% url 'about' %}"><li><i class="fa-solid fa-circle-info"></i> Про нас</li></a>
             <a href="{% url 'contacts' %}"><li><i class="fa-solid fa-address-card"></i> Обратная связь</li></a>
             {% if request.user.is_authenticated %}
+                <a href="{% url 'chat' %}"><li><button class="btn btn-danger">ЧАТ</button></li></a>
                 <a href="{% url 'upload_member' %}"><li><button class="btn btn-info"><i class="fa-solid fa-plus-circle"></i> Добавить</button></li></a>
                 <li> {{ user.username }} </li>
                 <a href="{% url 'logout' %}"><li><button class="btn btn-danger">Выйти</button></li></a>

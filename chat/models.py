@@ -10,6 +10,9 @@ class Messages(models.Model):
     text = models.CharField('Текст сообщения', max_length=200)
     created_at = models.DateTimeField('Дата и время отправки', auto_now_add=True)
 
+    def __str__(self):
+        return f'{self.author} : {self.text}'
+
     class Meta:
         verbose_name = 'Сообщения'
         verbose_name_plural = 'Сообщение'
