@@ -8,5 +8,6 @@ urlpatterns = [
     path('captcha/', include('captcha.urls')),
     path('', include('main.urls')),
     path('chart/', include('scores.urls')),
-    path('users/', include('customusers.urls'))
+    path('users/', include('customusers.urls')),
+    path('chat/', include('chat.urls')), 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

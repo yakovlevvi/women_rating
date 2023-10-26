@@ -32,6 +32,9 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
+    'channels',
+    'chat',
     'captcha',
     'customusers.apps.CustomusersConfig',
     'scores.apps.ScoresConfig',
@@ -74,7 +77,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'tyan_rating.wsgi.application'
-
+ASGI_APPLICATION = 'tyan_rating.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -134,6 +137,12 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
         'LOCATION': os.path.join(BASE_DIR, 'site_cache'),
+    }
+}
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
     }
 }
 
