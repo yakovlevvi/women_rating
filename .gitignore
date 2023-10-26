@@ -3,7 +3,7 @@
 /env
 __pycache__
 /venv
-../.idea
+/.idea
 *.jpg
 *.mp4
 .pytest_cache
