@@ -38,7 +38,7 @@ class Article(models.Model):
     created_at = models.DateTimeField('Дата и время публикации', auto_now_add=True)
     time_update = models.DateTimeField('Время изменения', auto_now=True)
     is_published = models.BooleanField('Публикация', default=True)
-    cat = models.ForeignKey('Category', null=True, on_delete=models.PROTECT, blank=True)
+    cat = models.ForeignKey('Category', null=True, on_delete=models.CASCADE, blank=True)
 
     def __str__(self):
         return self.name

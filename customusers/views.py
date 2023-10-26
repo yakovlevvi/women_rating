@@ -71,3 +71,27 @@ class UserProfileView(DataMixin, DetailView):
         c_def = self.get_user_context()
         context.update(c_def)
         return context
+
+
+class ProfileView(DataMixin, DetailView):
+    model = TopUser
+    template_name = 'customusers/profile.html'
+    context_object_name = 'user'
+    slug_url_kwarg = 'username'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        username = self.kwargs['username']  # Получите имя пользователя из URL
+
+        # Вычисляем усредненные рейтинги для статей пользователя с именем username
+        user_ratings = ArticleRating.objects.filter(user__username=username)
+        average_ratings = {}
+        for rating in user_ratings:
+            avg_rating = (rating.face + rating.figure + rating.tits + rating.ass) / 4
+            average_ratings[rating.article] = avg_rating
+
+        sorted_average_ratings = dict(sorted(average_ratings.items(), key=lambda item: item[1], reverse=True))
+        context['average_ratings'] = sorted_average_ratings
+        c_def = self.get_user_context()
+        context.update(c_def)
+        return context

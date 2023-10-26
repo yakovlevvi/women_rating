@@ -11,7 +11,7 @@ class ArticleAdmin(admin.ModelAdmin):
     list_editable = ('is_published', )
     list_filter = ('is_published', 'created_at')
     prepopulated_fields = {'slug': ('name',)}
-    fields = ('name', 'slug', 'cat', 'age', 'total_rating', 'user_count', 'photo', 'get_html_photo', 'is_published')
+    fields = ('name', 'slug', 'cat', 'age', 'total_rating', 'user_count', 'photo', 'is_published')
     save_on_top = True
 
     def get_html_photo(self, object):
