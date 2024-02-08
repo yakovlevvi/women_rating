@@ -1,0 +1,23 @@
+.header {
+    border-bottom: 1px solid #9F843A;
+    padding: 10px 0;
+    background: rgba(158, 136, 74, 0.5);
+}
+
+.header__content {
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__chat {
+    display: block;
+    margin: auto 0;
+    height: 100%;
+}
+
+.header__profile-image {
+    width: 100px;
+    border-radius: 50%;
+}
+

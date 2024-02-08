@@ -7,7 +7,7 @@
         <h1>Список пользователей</h1>
         <ul class="users">
             {% for user in users %}
-                <li class="user"><a class='user-link' href="{% url 'user_profile' user.username %}"><img class="profile-image" src="{{ user.profile_image }}" alt=""><br>{{ user.username }}</li></a>
+                <li class="user"><a class='user-link' href="{% url 'users:user_profile' user.username %}"><img class="profile-image" src="{{ user.profile_image }}" alt=""><br>{{ user.username }}</li></a>
             {% endfor %}
         </ul>
 

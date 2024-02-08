@@ -1,0 +1,26 @@
+[
+    {
+        "model": "scores.category",
+        "pk": 2,
+        "fields": {
+            "name": "Актрисы",
+            "slug": "aktrisy"
+        }
+    },
+    {
+        "model": "scores.category",
+        "pk": 3,
+        "fields": {
+            "name": "Певицы",
+            "slug": "pevicy"
+        }
+    },
+    {
+        "model": "scores.category",
+        "pk": 4,
+        "fields": {
+            "name": "Модели",
+            "slug": "modeli"
+        }
+    }
+]

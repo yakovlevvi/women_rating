@@ -1,0 +1,546 @@
+[
+    {
+        "model": "scores.article",
+        "pk": 1,
+        "fields": {
+            "name": "Ана де Армас",
+            "slug": "ana-de-armas",
+            "age": 35,
+            "total_rating": "7.65",
+            "user_count": 7,
+            "photo": "https://cdn.calciomercato.com/images/2021-10/ana.de.armas.bond.girl.1080x648.jpg",
+            "created_at": "2023-10-16T07:33:13.608Z",
+            "time_update": "2023-10-24T14:28:02.055Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 2,
+        "fields": {
+            "name": "Марго Робби",
+            "slug": "margo-robbi",
+            "age": 33,
+            "total_rating": "6.29",
+            "user_count": 4,
+            "photo": "https://img.goodfon.ru/original/800x480/7/a9/vzgliad-aktrisa-blondinka-serga-look-blonde-actress-margot-1.jpg",
+            "created_at": "2023-10-16T08:56:46.388Z",
+            "time_update": "2023-10-23T13:43:17.503Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 9,
+        "fields": {
+            "name": "Эстер Экспозито",
+            "slug": "ester-ekspozito",
+            "age": 23,
+            "total_rating": "7.63",
+            "user_count": 4,
+            "photo": "https://www.minutoneuquen.com/u/fotografias/fotosnoticias/2020/7/10/315457.jpg",
+            "created_at": "2023-10-17T09:41:23.251Z",
+            "time_update": "2023-10-24T13:41:22.156Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 10,
+        "fields": {
+            "name": "Мишель Киган",
+            "slug": "mishel-kigan",
+            "age": 36,
+            "total_rating": "7.47",
+            "user_count": 4,
+            "photo": "https://i.pinimg.com/originals/ef/95/2b/ef952bd179d948dbd5efe695ef481ad9.jpg",
+            "created_at": "2023-10-17T09:42:05.459Z",
+            "time_update": "2024-01-28T19:51:01.793Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 11,
+        "fields": {
+            "name": "Эмилия Ратаковски",
+            "slug": "emiliia-ratakovski",
+            "age": 32,
+            "total_rating": "7.15",
+            "user_count": 4,
+            "photo": "https://images.hdqwalls.com/download/emily-ratajkowski-ny-times-2017-jr-2048x1152.jpg",
+            "created_at": "2023-10-17T09:44:57.183Z",
+            "time_update": "2023-10-23T13:41:52.434Z",
+            "is_published": true,
+            "cat": 4
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 12,
+        "fields": {
+            "name": "Натали Портман",
+            "slug": "natali-portman",
+            "age": 42,
+            "total_rating": "6.75",
+            "user_count": 3,
+            "photo": "https://www.kino-teatr.ru/news/15913/144087.jpg",
+            "created_at": "2023-10-17T09:45:55.570Z",
+            "time_update": "2023-10-23T13:42:37.041Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 13,
+        "fields": {
+            "name": "Кира Найтли",
+            "slug": "kira-naitli",
+            "age": 38,
+            "total_rating": "6.53",
+            "user_count": 3,
+            "photo": "http://images.fanpop.com/images/image_uploads/Keira-Knightley-keira-knightley-229067_1280_1024.jpg",
+            "created_at": "2023-10-17T13:56:32.171Z",
+            "time_update": "2023-10-23T12:40:30.537Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 14,
+        "fields": {
+            "name": "Александра Даддарио",
+            "slug": "aleksandra-daddario",
+            "age": 37,
+            "total_rating": "7.46",
+            "user_count": 5,
+            "photo": "https://beerhead-bar.ru/wp-content/uploads/goryachee-foto-v-kupalnike-2.jpg",
+            "created_at": "2023-10-17T14:10:26.820Z",
+            "time_update": "2024-01-28T19:50:28.992Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 15,
+        "fields": {
+            "name": "Кэтрин Макнамара",
+            "slug": "ketrin-maknamara",
+            "age": 27,
+            "total_rating": "7.06",
+            "user_count": 5,
+            "photo": "https://javasea.ru/uploads/posts/2021-10/1635701412_kjetrin-maknamara-vo-mrake.jpg",
+            "created_at": "2023-10-17T14:36:22.880Z",
+            "time_update": "2023-10-24T14:34:11.881Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 16,
+        "fields": {
+            "name": "Эмилия Кларк",
+            "slug": "emiliia-klark",
+            "age": 36,
+            "total_rating": "6.89",
+            "user_count": 4,
+            "photo": "https://gazeta19.ru/media/k2/items/cache/19dce5eb84bf5cffba6ca307a5a671af_XL.jpg",
+            "created_at": "2023-10-17T14:44:24.228Z",
+            "time_update": "2023-10-23T12:46:44.336Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 17,
+        "fields": {
+            "name": "Аманда Сайфред",
+            "slug": "amanda-saifred",
+            "age": 37,
+            "total_rating": "6.69",
+            "user_count": 3,
+            "photo": "https://lipstiq.com/wp-content/uploads/2016/10/5141.jpg",
+            "created_at": "2023-10-23T09:36:35.653Z",
+            "time_update": "2023-10-23T12:16:00.712Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 18,
+        "fields": {
+            "name": "Сидни Суини",
+            "slug": "sidni-suini",
+            "age": 26,
+            "total_rating": "7.95",
+            "user_count": 6,
+            "photo": "https://sun9-71.userapi.com/impg/c858432/v858432435/1962c8/ek99Hvxj2_M.jpg?size=1728x2160&quality=96&sign=ccb4e6d846da7c31c238bf3d633eb059&type=album",
+            "created_at": "2023-10-23T09:59:59.698Z",
+            "time_update": "2023-10-24T14:26:35.326Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 19,
+        "fields": {
+            "name": "Натали Дормер",
+            "slug": "natali-dormer",
+            "age": 41,
+            "total_rating": "6.05",
+            "user_count": 3,
+            "photo": "https://img.goodfon.com/original/1024x768/6/e3/natalie-dormer-igra-prestolov.jpg",
+            "created_at": "2023-10-23T10:00:27.976Z",
+            "time_update": "2023-10-23T12:37:57.756Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 20,
+        "fields": {
+            "name": "Хейли Этвелл",
+            "slug": "kheili-etvell",
+            "age": 41,
+            "total_rating": "6.69",
+            "user_count": 5,
+            "photo": "https://simp1.jpg.church/images/54235548_h8.jpg",
+            "created_at": "2023-10-23T10:07:39.962Z",
+            "time_update": "2023-10-23T13:18:46.543Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 21,
+        "fields": {
+            "name": "Анжелика Стубайло",
+            "slug": "anzhelika-stubailo",
+            "age": 22,
+            "total_rating": "7.30",
+            "user_count": 5,
+            "photo": "https://static.sportbox.ru/images/styles/960_auto/fp_fotos/99/02/25f9076a1d8c13b6ff5bc87cc3748fd362fd68e1abe3d154950788.jpg",
+            "created_at": "2023-10-23T12:25:48.516Z",
+            "time_update": "2023-10-23T14:19:56.745Z",
+            "is_published": true,
+            "cat": null
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 22,
+        "fields": {
+            "name": "Шакира",
+            "slug": "shakira",
+            "age": 46,
+            "total_rating": "7.20",
+            "user_count": 3,
+            "photo": "https://images.hola.com/us/images/025b-0f0dc7cb11a3-0f3a698d508a-1000/horizontal-800/shakira.jpg",
+            "created_at": "2023-10-23T12:55:35.595Z",
+            "time_update": "2023-10-24T13:34:32.607Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 23,
+        "fields": {
+            "name": "Анна Плетнева",
+            "slug": "anna-pletneva",
+            "age": 46,
+            "total_rating": "6.77",
+            "user_count": 4,
+            "photo": "https://www.syl.ru/misc/i/ni/2/4/3/3/2/2/4/i/2433224.jpg",
+            "created_at": "2023-10-23T12:56:46.104Z",
+            "time_update": "2023-10-23T13:45:53.534Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 24,
+        "fields": {
+            "name": "IOWA",
+            "slug": "iowa",
+            "age": 36,
+            "total_rating": "5.12",
+            "user_count": 2,
+            "photo": "https://express-novosti.ru/images/2018/08/5b88ee9aa602b-full.jpg",
+            "created_at": "2023-10-23T12:58:20.797Z",
+            "time_update": "2023-10-23T14:29:58.826Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 25,
+        "fields": {
+            "name": "Люся Чеботина",
+            "slug": "liusia-chebotina",
+            "age": 26,
+            "total_rating": "7.24",
+            "user_count": 5,
+            "photo": "https://go.zvuk.com/imgs/2022/12/12/08/5709472/94cf81ade19a551c30a09dc4d34952c89401b225.jpg",
+            "created_at": "2023-10-23T13:00:05.650Z",
+            "time_update": "2023-10-24T14:32:13.579Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 26,
+        "fields": {
+            "name": "Клава Кока",
+            "slug": "klava-koka",
+            "age": 27,
+            "total_rating": "5.12",
+            "user_count": 3,
+            "photo": "https://images.thevoicemag.ru/upload/img_cache/c1f/c1fd2bf048ddfa15a752c621da29cf90_cropped_1332x886.jpg",
+            "created_at": "2023-10-23T13:01:43.846Z",
+            "time_update": "2023-10-23T14:29:00.863Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 27,
+        "fields": {
+            "name": "Ольга Серябкина",
+            "slug": "olga-seriabkina",
+            "age": 38,
+            "total_rating": "7.52",
+            "user_count": 3,
+            "photo": "https://tntmusic.ru/media/content/article@2x/2018-07-23_07-52-13__4fa49e34-8e4d-11e8-81b2-ff91e879ee26.jpg",
+            "created_at": "2023-10-23T13:05:58.756Z",
+            "time_update": "2023-10-23T14:10:36.593Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 28,
+        "fields": {
+            "name": "Галина Дубенко",
+            "slug": "galina-dubenko",
+            "age": 28,
+            "total_rating": "8.77",
+            "user_count": 6,
+            "photo": "https://img-comment-fun.9cache.com/media/am5YPe4/abx32YG0_700w_0.jpg",
+            "created_at": "2023-10-23T13:06:26.656Z",
+            "time_update": "2023-10-24T14:23:20.546Z",
+            "is_published": true,
+            "cat": 4
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 29,
+        "fields": {
+            "name": "Мари Краймбрери",
+            "slug": "mari-kraimbreri",
+            "age": 31,
+            "total_rating": "6.29",
+            "user_count": 2,
+            "photo": "https://bez-makiyazha.ru/wp-content/uploads/2019/08/mari1.jpg",
+            "created_at": "2023-10-23T13:06:59.393Z",
+            "time_update": "2023-10-23T14:12:16.279Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 31,
+        "fields": {
+            "name": "Надя Дорофеева",
+            "slug": "nadia-dorofeeva",
+            "age": 33,
+            "total_rating": "6.90",
+            "user_count": 3,
+            "photo": "https://globalsib.com/wp-content/uploads/2017/09/19120530_1582725555073732_7860466789417746432_n-e1499785089990-1024x768.jpg",
+            "created_at": "2023-10-23T13:10:20.250Z",
+            "time_update": "2023-10-23T13:35:15.273Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 32,
+        "fields": {
+            "name": "Меган Фокс",
+            "slug": "megan-foks",
+            "age": 37,
+            "total_rating": "7.72",
+            "user_count": 5,
+            "photo": "https://saloon-beauty.ru/wp-content/uploads/b/3/a/b3a9b0f5c97cb9e885b7690c639e1205.jpeg",
+            "created_at": "2023-10-23T13:12:09.273Z",
+            "time_update": "2023-10-24T14:29:43.147Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 33,
+        "fields": {
+            "name": "Миа Бойко",
+            "slug": "mia-boiko",
+            "age": 26,
+            "total_rating": "7.09",
+            "user_count": 3,
+            "photo": "https://api.eric.s3storage.ru/super-static/prod/6396f19b0c8f64262085a5a7-1900x.jpeg",
+            "created_at": "2023-10-23T13:42:58.679Z",
+            "time_update": "2023-10-23T14:12:30.194Z",
+            "is_published": true,
+            "cat": 3
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 34,
+        "fields": {
+            "name": "Наталья Рудова",
+            "slug": "natalia-rudova",
+            "age": 40,
+            "total_rating": "6.89",
+            "user_count": 3,
+            "photo": "https://avatars.dzeninfra.ru/get-zen_doc/5284326/pub_62e22c98698ed43fc4b340d1_62e268f4882fcd6074b42cbc/scale_1200",
+            "created_at": "2023-10-23T14:02:15.690Z",
+            "time_update": "2023-10-23T14:26:02.266Z",
+            "is_published": true,
+            "cat": null
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 35,
+        "fields": {
+            "name": "Натали Эммануэль",
+            "slug": "natali-emmanuel",
+            "age": 34,
+            "total_rating": "7.04",
+            "user_count": 3,
+            "photo": "https://w.forfun.com/fetch/7c/7cea12f67207b098f4d83ee356646fd4.jpeg",
+            "created_at": "2023-10-23T14:09:58.580Z",
+            "time_update": "2023-10-24T14:35:43.058Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 36,
+        "fields": {
+            "name": "Аннабель Люсинда",
+            "slug": "annabel-lucinda",
+            "age": 24,
+            "total_rating": "7.14",
+            "user_count": 4,
+            "photo": "https://www.girlswithmuscle.com/images/full/2085862.jpg",
+            "created_at": "2023-10-23T14:17:57.162Z",
+            "time_update": "2023-10-24T14:37:34.474Z",
+            "is_published": true,
+            "cat": 4
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 37,
+        "fields": {
+            "name": "Скарлетт Йоханссон",
+            "slug": "skarlett-iokhansson",
+            "age": 38,
+            "total_rating": "7.54",
+            "user_count": 3,
+            "photo": "https://i.ytimg.com/vi/SuSwQMp1FdY/maxresdefault.jpg",
+            "created_at": "2023-10-23T14:33:48.895Z",
+            "time_update": "2023-10-24T13:39:44.762Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 38,
+        "fields": {
+            "name": "Эбигейл Коуэн",
+            "slug": "ebigeil-kouen",
+            "age": 25,
+            "total_rating": "6.96",
+            "user_count": 2,
+            "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-10/thumbs/1666377094_1-mykaleidoscope-ru-p-ebbi-kouen-instagram-1.jpg",
+            "created_at": "2023-10-24T13:31:35.715Z",
+            "time_update": "2023-10-24T13:40:28.693Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 39,
+        "fields": {
+            "name": "Узо Адуба",
+            "slug": "uzo-aduba",
+            "age": 42,
+            "total_rating": "0.00",
+            "user_count": null,
+            "photo": "https://static.wikia.nocookie.net/mlp/images/a/aa/Uzo_Aduba_Netflix_promotion.jpg/revision/latest?cb=20180117214924&path-prefix=ru",
+            "created_at": "2023-10-24T13:33:31.130Z",
+            "time_update": "2023-10-24T13:33:31.130Z",
+            "is_published": true,
+            "cat": 2
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 40,
+        "fields": {
+            "name": "Сиерра Скай",
+            "slug": "sierra-skai",
+            "age": 24,
+            "total_rating": "8.88",
+            "user_count": 2,
+            "photo": "https://i.pinimg.com/originals/55/43/b3/5543b35d989e8427775d42fd92a7fb36.jpg",
+            "created_at": "2023-10-24T13:52:24.109Z",
+            "time_update": "2024-01-28T19:48:53.568Z",
+            "is_published": true,
+            "cat": 4
+        }
+    },
+    {
+        "model": "scores.article",
+        "pk": 41,
+        "fields": {
+            "name": "leenbeefparty",
+            "slug": "leenbeefparty",
+            "age": 26,
+            "total_rating": "8.50",
+            "user_count": 1,
+            "photo": "http://c11.incisozluk.com.tr/res/incisozluk/11009/1/4108791_oebb0.jpg",
+            "created_at": "2023-10-24T14:42:50.875Z",
+            "time_update": "2023-10-26T09:05:13.153Z",
+            "is_published": true,
+            "cat": 4
+        }
+    }
+]

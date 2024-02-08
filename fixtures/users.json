@@ -1,0 +1,192 @@
+[
+    {
+        "model": "scores.topuser",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$CJrNCgg2W9NwYzlCoWOZVI$PKx7Rm2/KO0V3YNADhWHeto9Rnhu3qu4wLno0vTvjnQ=",
+            "last_login": "2024-02-08T16:02:03.971Z",
+            "is_superuser": true,
+            "username": "v_admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-10-13T12:10:32Z",
+            "profile_image": "https://wol.su/uploads/posts/2023-04/1680803333_multiversus-ps5-ps4-playstation.webp",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$uqJt6N0M2BwN$0NBnqxhCWNOGvnJsHhVrjM+Tp2lCc+oid6iF5Hq0qOg=",
+            "last_login": "2023-10-23T09:07:31.297Z",
+            "is_superuser": false,
+            "username": "Safar",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-17T12:10:32.701Z",
+            "profile_image": "https://w.forfun.com/fetch/32/32f54595fea78b5edf770aea1e5767d3.jpeg",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$zQofVNWWWswh$fC6RPqRKcrBicl0yz/BHqwGnkb/E5PU5+oa2SMC3j8g=",
+            "last_login": "2023-10-24T13:20:21.741Z",
+            "is_superuser": false,
+            "username": "Username",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-17T13:53:55.607Z",
+            "profile_image": "http://gbic.ucoz.ru/_nw/14/19227419.jpg",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 6,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$uVEzsczWVfM2$KzHm4Y7mCIw/YJQ676ovGX3h4VPBWrF47p98U556srs=",
+            "last_login": "2023-10-24T13:38:56.615Z",
+            "is_superuser": false,
+            "username": "Oldman",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T09:24:46.040Z",
+            "profile_image": "https://w.forfun.com/fetch/de/dea7179c491a1ae78d5f0984ed145957.jpeg",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$XI0SxX1a7Vis$HepMsMQyApEuYPduapJ9YzA20MyXcGEeU4ODdoSXO+4=",
+            "last_login": "2023-10-23T12:18:28.427Z",
+            "is_superuser": false,
+            "username": "Толстолобик",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T12:18:28.044Z",
+            "profile_image": "https://rybkivse.ru/wp-content/uploads/2017/01/%D1%84%D0%BE%D1%82%D0%BE-1-7be13bc7ca697710ab47a5793dabeead.jpg",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 9,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$M0wx53BdLpIJ$rxZPSZk4M7dPV7IlOuybITp/Wim2i30m0HK6DSUAb+0=",
+            "last_login": "2023-10-23T13:50:54.857Z",
+            "is_superuser": false,
+            "username": "0dmen",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T12:33:57.510Z",
+            "profile_image": "https://sun6-22.userapi.com/s/v1/ig2/mKSZUvEhyb_ykBDgddufVpr3XSXiG-gdpNvjf4RmgmRnuKSKA8VYyp3HmfXJcqW2nC6Anxm9IU2NoFz7zpq2TMoV.jpg?size=2155x2155&quality=95&crop=0,4,2155,2155&ava=1",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 10,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$bWqZO9lm91E3$s/JOJivYJiOydXVk6yNOr8Dxbgn3n0q8PN1BrIzJi+o=",
+            "last_login": "2023-10-23T13:46:21.981Z",
+            "is_superuser": false,
+            "username": "kalich",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T13:46:21.592Z",
+            "profile_image": "https://clinica-opora.ru/wp-content/uploads/2021/02/602f727428497.jpeg",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 11,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$vNJGoBR71TO4$Z46Aj1m7T0WgQH7oPNnz7wJsAqeKIKt/XMURo78FkYE=",
+            "last_login": "2023-10-23T14:08:23.582Z",
+            "is_superuser": false,
+            "username": "ОбЭме",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-23T14:08:22.662Z",
+            "profile_image": "https://i.ytimg.com/vi/c-LcfdExOKk/maxresdefault.jpg?7857057827",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 12,
+        "fields": {
+            "password": "pbkdf2_sha256$216000$WklqDGNAAWtA$O/7DykrgawMfIdzZ/B2LcXUpLIBpawOvfm3g/dGDc6c=",
+            "last_login": "2023-10-24T14:19:51.408Z",
+            "is_superuser": false,
+            "username": "NuclearHolocauster",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-10-24T14:19:51.043Z",
+            "profile_image": "https://i.ytimg.com/vi/KhrXow6CapU/maxresdefault.jpg",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "scores.topuser",
+        "pk": 13,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$a7gKPJQkjxSbQ4b5iQDMD5$Y9NWfUjrQxn7avQ7hAUejMfY2J3FT32pbrIgshFMdYg=",
+            "last_login": "2023-10-26T13:13:50.346Z",
+            "is_superuser": true,
+            "username": "test",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-10-26T13:13:06.846Z",
+            "profile_image": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

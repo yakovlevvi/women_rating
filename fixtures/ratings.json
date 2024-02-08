@@ -1,0 +1,1466 @@
+[
+    {
+        "model": "scores.articlerating",
+        "pk": 11,
+        "fields": {
+            "user": 4,
+            "article": 1,
+            "face": "7.00",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 12,
+        "fields": {
+            "user": 1,
+            "article": 1,
+            "face": "10.00",
+            "figure": "9.00",
+            "tits": "9.00",
+            "ass": "9.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 13,
+        "fields": {
+            "user": 1,
+            "article": 2,
+            "face": "9.00",
+            "figure": "8.50",
+            "tits": "8.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 14,
+        "fields": {
+            "user": 1,
+            "article": 9,
+            "face": "7.50",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 15,
+        "fields": {
+            "user": 1,
+            "article": 10,
+            "face": "7.00",
+            "figure": "7.50",
+            "tits": "8.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 16,
+        "fields": {
+            "user": 1,
+            "article": 11,
+            "face": "7.50",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 17,
+        "fields": {
+            "user": 1,
+            "article": 12,
+            "face": "8.00",
+            "figure": "7.50",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 18,
+        "fields": {
+            "user": 5,
+            "article": 1,
+            "face": "9.00",
+            "figure": "9.00",
+            "tits": "8.40",
+            "ass": "8.30"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 19,
+        "fields": {
+            "user": 5,
+            "article": 2,
+            "face": "8.40",
+            "figure": "7.80",
+            "tits": "7.80",
+            "ass": "7.80"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 20,
+        "fields": {
+            "user": 5,
+            "article": 9,
+            "face": "8.00",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 21,
+        "fields": {
+            "user": 5,
+            "article": 11,
+            "face": "6.80",
+            "figure": "7.30",
+            "tits": "8.00",
+            "ass": "7.40"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 22,
+        "fields": {
+            "user": 5,
+            "article": 10,
+            "face": "7.60",
+            "figure": "7.80",
+            "tits": "8.00",
+            "ass": "6.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 23,
+        "fields": {
+            "user": 5,
+            "article": 12,
+            "face": "7.50",
+            "figure": "6.50",
+            "tits": "6.00",
+            "ass": "6.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 24,
+        "fields": {
+            "user": 5,
+            "article": 13,
+            "face": "8.80",
+            "figure": "7.20",
+            "tits": "7.20",
+            "ass": "7.20"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 25,
+        "fields": {
+            "user": 5,
+            "article": 14,
+            "face": "9.00",
+            "figure": "8.60",
+            "tits": "8.80",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 26,
+        "fields": {
+            "user": 4,
+            "article": 14,
+            "face": "9.00",
+            "figure": "9.00",
+            "tits": "9.00",
+            "ass": "9.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 27,
+        "fields": {
+            "user": 5,
+            "article": 15,
+            "face": "9.00",
+            "figure": "8.40",
+            "tits": "8.50",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 28,
+        "fields": {
+            "user": 6,
+            "article": 14,
+            "face": "6.00",
+            "figure": "6.00",
+            "tits": "7.00",
+            "ass": "4.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 29,
+        "fields": {
+            "user": 1,
+            "article": 15,
+            "face": "9.00",
+            "figure": "7.00",
+            "tits": "8.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 30,
+        "fields": {
+            "user": 6,
+            "article": 15,
+            "face": "10.00",
+            "figure": "7.00",
+            "tits": "6.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 31,
+        "fields": {
+            "user": 1,
+            "article": 14,
+            "face": "8.50",
+            "figure": "7.50",
+            "tits": "9.00",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 32,
+        "fields": {
+            "user": 6,
+            "article": 1,
+            "face": "7.00",
+            "figure": "7.00",
+            "tits": "6.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 33,
+        "fields": {
+            "user": 1,
+            "article": 13,
+            "face": "8.50",
+            "figure": "8.50",
+            "tits": "7.50",
+            "ass": "6.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 34,
+        "fields": {
+            "user": 6,
+            "article": 2,
+            "face": "4.00",
+            "figure": "4.00",
+            "tits": "3.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 35,
+        "fields": {
+            "user": 1,
+            "article": 16,
+            "face": "8.50",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "9.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 36,
+        "fields": {
+            "user": 6,
+            "article": 9,
+            "face": "7.00",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 37,
+        "fields": {
+            "user": 6,
+            "article": 16,
+            "face": "6.00",
+            "figure": "6.00",
+            "tits": "6.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 38,
+        "fields": {
+            "user": 6,
+            "article": 13,
+            "face": "7.00",
+            "figure": "6.00",
+            "tits": "2.00",
+            "ass": "2.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 39,
+        "fields": {
+            "user": 6,
+            "article": 10,
+            "face": "6.00",
+            "figure": "7.00",
+            "tits": "8.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 40,
+        "fields": {
+            "user": 6,
+            "article": 11,
+            "face": "4.00",
+            "figure": "7.00",
+            "tits": "4.00",
+            "ass": "10.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 41,
+        "fields": {
+            "user": 1,
+            "article": 17,
+            "face": "9.00",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 42,
+        "fields": {
+            "user": 6,
+            "article": 17,
+            "face": "5.00",
+            "figure": "5.00",
+            "tits": "5.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 43,
+        "fields": {
+            "user": 6,
+            "article": 12,
+            "face": "8.00",
+            "figure": "7.00",
+            "tits": "5.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 44,
+        "fields": {
+            "user": 6,
+            "article": 18,
+            "face": "8.00",
+            "figure": "8.00",
+            "tits": "9.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 45,
+        "fields": {
+            "user": 6,
+            "article": 19,
+            "face": "4.00",
+            "figure": "4.00",
+            "tits": "2.00",
+            "ass": "2.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 46,
+        "fields": {
+            "user": 1,
+            "article": 18,
+            "face": "9.00",
+            "figure": "9.00",
+            "tits": "9.00",
+            "ass": "9.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 47,
+        "fields": {
+            "user": 5,
+            "article": 18,
+            "face": "8.40",
+            "figure": "7.00",
+            "tits": "8.80",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 48,
+        "fields": {
+            "user": 5,
+            "article": 16,
+            "face": "8.20",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "7.80"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 49,
+        "fields": {
+            "user": 5,
+            "article": 17,
+            "face": "7.80",
+            "figure": "7.50",
+            "tits": "6.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 50,
+        "fields": {
+            "user": 1,
+            "article": 19,
+            "face": "8.00",
+            "figure": "7.50",
+            "tits": "7.00",
+            "ass": "6.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 51,
+        "fields": {
+            "user": 5,
+            "article": 19,
+            "face": "8.00",
+            "figure": "7.80",
+            "tits": "8.30",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 52,
+        "fields": {
+            "user": 5,
+            "article": 20,
+            "face": "7.50",
+            "figure": "7.00",
+            "tits": "9.00",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 53,
+        "fields": {
+            "user": 1,
+            "article": 20,
+            "face": "7.50",
+            "figure": "7.00",
+            "tits": "8.50",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 54,
+        "fields": {
+            "user": 7,
+            "article": 18,
+            "face": "7.00",
+            "figure": "8.00",
+            "tits": "8.50",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 55,
+        "fields": {
+            "user": 7,
+            "article": 20,
+            "face": "8.00",
+            "figure": "8.50",
+            "tits": "9.00",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 56,
+        "fields": {
+            "user": 5,
+            "article": 21,
+            "face": "8.40",
+            "figure": "8.40",
+            "tits": "7.70",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 57,
+        "fields": {
+            "user": 1,
+            "article": 21,
+            "face": "7.00",
+            "figure": "8.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 58,
+        "fields": {
+            "user": 9,
+            "article": 11,
+            "face": "6.70",
+            "figure": "8.40",
+            "tits": "7.60",
+            "ass": "6.15"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 59,
+        "fields": {
+            "user": 9,
+            "article": 18,
+            "face": "5.40",
+            "figure": "8.40",
+            "tits": "5.90",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 60,
+        "fields": {
+            "user": 9,
+            "article": 16,
+            "face": "6.45",
+            "figure": "6.00",
+            "tits": "4.30",
+            "ass": "4.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 61,
+        "fields": {
+            "user": 6,
+            "article": 21,
+            "face": "7.00",
+            "figure": "8.00",
+            "tits": "4.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 62,
+        "fields": {
+            "user": 9,
+            "article": 14,
+            "face": "3.90",
+            "figure": "7.30",
+            "tits": "8.70",
+            "ass": "3.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 63,
+        "fields": {
+            "user": 6,
+            "article": 20,
+            "face": "5.00",
+            "figure": "4.00",
+            "tits": "6.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 64,
+        "fields": {
+            "user": 9,
+            "article": 10,
+            "face": "9.23",
+            "figure": "8.64",
+            "tits": "8.70",
+            "ass": "6.62"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 65,
+        "fields": {
+            "user": 9,
+            "article": 21,
+            "face": "9.15",
+            "figure": "9.23",
+            "tits": "5.50",
+            "ass": "5.10"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 66,
+        "fields": {
+            "user": 9,
+            "article": 15,
+            "face": "6.00",
+            "figure": "5.00",
+            "tits": "4.30",
+            "ass": "4.40"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 67,
+        "fields": {
+            "user": 9,
+            "article": 9,
+            "face": "8.30",
+            "figure": "9.00",
+            "tits": "8.10",
+            "ass": "6.15"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 68,
+        "fields": {
+            "user": 9,
+            "article": 2,
+            "face": "4.30",
+            "figure": "5.00",
+            "tits": "6.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 71,
+        "fields": {
+            "user": 9,
+            "article": 20,
+            "face": "4.10",
+            "figure": "3.70",
+            "tits": "5.95",
+            "ass": "4.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 72,
+        "fields": {
+            "user": 1,
+            "article": 23,
+            "face": "8.80",
+            "figure": "8.50",
+            "tits": "8.00",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 73,
+        "fields": {
+            "user": 1,
+            "article": 28,
+            "face": "9.00",
+            "figure": "9.00",
+            "tits": "8.00",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 74,
+        "fields": {
+            "user": 9,
+            "article": 25,
+            "face": "5.95",
+            "figure": "7.15",
+            "tits": "7.30",
+            "ass": "3.86"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 75,
+        "fields": {
+            "user": 1,
+            "article": 31,
+            "face": "8.50",
+            "figure": "7.50",
+            "tits": "8.00",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 76,
+        "fields": {
+            "user": 9,
+            "article": 28,
+            "face": "9.35",
+            "figure": "9.75",
+            "tits": "9.05",
+            "ass": "9.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 77,
+        "fields": {
+            "user": 1,
+            "article": 25,
+            "face": "8.50",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 78,
+        "fields": {
+            "user": 6,
+            "article": 23,
+            "face": "5.00",
+            "figure": "5.00",
+            "tits": "5.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 79,
+        "fields": {
+            "user": 6,
+            "article": 28,
+            "face": "9.00",
+            "figure": "10.00",
+            "tits": "8.00",
+            "ass": "10.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 80,
+        "fields": {
+            "user": 6,
+            "article": 31,
+            "face": "5.00",
+            "figure": "5.00",
+            "tits": "5.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 81,
+        "fields": {
+            "user": 9,
+            "article": 23,
+            "face": "3.40",
+            "figure": "5.76",
+            "tits": "7.50",
+            "ass": "7.60"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 82,
+        "fields": {
+            "user": 5,
+            "article": 31,
+            "face": "8.00",
+            "figure": "8.00",
+            "tits": "7.70",
+            "ass": "7.60"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 83,
+        "fields": {
+            "user": 6,
+            "article": 25,
+            "face": "7.00",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 84,
+        "fields": {
+            "user": 5,
+            "article": 28,
+            "face": "8.00",
+            "figure": "8.00",
+            "tits": "8.40",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 85,
+        "fields": {
+            "user": 1,
+            "article": 32,
+            "face": "8.50",
+            "figure": "8.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 86,
+        "fields": {
+            "user": 6,
+            "article": 32,
+            "face": "7.00",
+            "figure": "8.00",
+            "tits": "6.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 87,
+        "fields": {
+            "user": 1,
+            "article": 22,
+            "face": "7.50",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 88,
+        "fields": {
+            "user": 1,
+            "article": 26,
+            "face": "8.00",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 89,
+        "fields": {
+            "user": 5,
+            "article": 23,
+            "face": "7.80",
+            "figure": "7.50",
+            "tits": "7.50",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 90,
+        "fields": {
+            "user": 1,
+            "article": 27,
+            "face": "8.00",
+            "figure": "7.50",
+            "tits": "8.50",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 91,
+        "fields": {
+            "user": 1,
+            "article": 29,
+            "face": "8.30",
+            "figure": "8.00",
+            "tits": "7.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 92,
+        "fields": {
+            "user": 5,
+            "article": 27,
+            "face": "8.00",
+            "figure": "7.80",
+            "tits": "8.50",
+            "ass": "7.90"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 93,
+        "fields": {
+            "user": 1,
+            "article": 33,
+            "face": "8.00",
+            "figure": "8.00",
+            "tits": "8.00",
+            "ass": "8.30"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 94,
+        "fields": {
+            "user": 1,
+            "article": 24,
+            "face": "7.00",
+            "figure": "7.00",
+            "tits": "6.50",
+            "ass": "6.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 95,
+        "fields": {
+            "user": 5,
+            "article": 34,
+            "face": "8.30",
+            "figure": "7.90",
+            "tits": "7.80",
+            "ass": "7.70"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 96,
+        "fields": {
+            "user": 5,
+            "article": 33,
+            "face": "7.50",
+            "figure": "7.70",
+            "tits": "7.60",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 97,
+        "fields": {
+            "user": 11,
+            "article": 26,
+            "face": "5.50",
+            "figure": "4.00",
+            "tits": "4.00",
+            "ass": "4.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 98,
+        "fields": {
+            "user": 6,
+            "article": 27,
+            "face": "6.00",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 99,
+        "fields": {
+            "user": 1,
+            "article": 35,
+            "face": "6.50",
+            "figure": "7.50",
+            "tits": "8.00",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 100,
+        "fields": {
+            "user": 6,
+            "article": 34,
+            "face": "5.00",
+            "figure": "5.00",
+            "tits": "5.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 101,
+        "fields": {
+            "user": 6,
+            "article": 29,
+            "face": "4.00",
+            "figure": "5.00",
+            "tits": "5.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 102,
+        "fields": {
+            "user": 6,
+            "article": 33,
+            "face": "5.00",
+            "figure": "6.00",
+            "tits": "6.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 103,
+        "fields": {
+            "user": 11,
+            "article": 32,
+            "face": "8.50",
+            "figure": "8.50",
+            "tits": "9.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 104,
+        "fields": {
+            "user": 6,
+            "article": 35,
+            "face": "7.00",
+            "figure": "7.00",
+            "tits": "5.00",
+            "ass": "4.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 105,
+        "fields": {
+            "user": 6,
+            "article": 22,
+            "face": "7.00",
+            "figure": "7.00",
+            "tits": "6.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 106,
+        "fields": {
+            "user": 7,
+            "article": 28,
+            "face": "9.50",
+            "figure": "9.50",
+            "tits": "8.00",
+            "ass": "9.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 107,
+        "fields": {
+            "user": 7,
+            "article": 1,
+            "face": "9.00",
+            "figure": "8.00",
+            "tits": "6.00",
+            "ass": "7.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 108,
+        "fields": {
+            "user": 11,
+            "article": 1,
+            "face": "10.00",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 109,
+        "fields": {
+            "user": 7,
+            "article": 21,
+            "face": "7.50",
+            "figure": "9.00",
+            "tits": "8.00",
+            "ass": "9.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 110,
+        "fields": {
+            "user": 1,
+            "article": 34,
+            "face": "7.50",
+            "figure": "8.00",
+            "tits": "7.50",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 111,
+        "fields": {
+            "user": 1,
+            "article": 36,
+            "face": "7.50",
+            "figure": "6.50",
+            "tits": "7.50",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 112,
+        "fields": {
+            "user": 6,
+            "article": 36,
+            "face": "7.00",
+            "figure": "5.00",
+            "tits": "5.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 113,
+        "fields": {
+            "user": 6,
+            "article": 26,
+            "face": "3.00",
+            "figure": "4.00",
+            "tits": "4.00",
+            "ass": "4.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 114,
+        "fields": {
+            "user": 6,
+            "article": 24,
+            "face": "4.00",
+            "figure": "4.00",
+            "tits": "3.00",
+            "ass": "3.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 115,
+        "fields": {
+            "user": 1,
+            "article": 37,
+            "face": "8.00",
+            "figure": "8.70",
+            "tits": "9.00",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 116,
+        "fields": {
+            "user": 6,
+            "article": 37,
+            "face": "6.00",
+            "figure": "6.00",
+            "tits": "8.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 117,
+        "fields": {
+            "user": 5,
+            "article": 37,
+            "face": "7.90",
+            "figure": "8.00",
+            "tits": "8.40",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 118,
+        "fields": {
+            "user": 5,
+            "article": 32,
+            "face": "8.20",
+            "figure": "8.00",
+            "tits": "7.90",
+            "ass": "6.80"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 119,
+        "fields": {
+            "user": 5,
+            "article": 36,
+            "face": "8.70",
+            "figure": "3.00",
+            "tits": "6.50",
+            "ass": "8.50"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 120,
+        "fields": {
+            "user": 5,
+            "article": 25,
+            "face": "8.40",
+            "figure": "8.00",
+            "tits": "8.30",
+            "ass": "7.90"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 121,
+        "fields": {
+            "user": 5,
+            "article": 22,
+            "face": "8.00",
+            "figure": "7.90",
+            "tits": "7.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 122,
+        "fields": {
+            "user": 5,
+            "article": 38,
+            "face": "8.70",
+            "figure": "8.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 123,
+        "fields": {
+            "user": 6,
+            "article": 38,
+            "face": "8.00",
+            "figure": "7.00",
+            "tits": "5.00",
+            "ass": "5.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 124,
+        "fields": {
+            "user": 6,
+            "article": 40,
+            "face": "8.00",
+            "figure": "10.00",
+            "tits": "8.00",
+            "ass": "10.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 125,
+        "fields": {
+            "user": 12,
+            "article": 40,
+            "face": "8.00",
+            "figure": "8.00",
+            "tits": "9.00",
+            "ass": "10.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 126,
+        "fields": {
+            "user": 12,
+            "article": 28,
+            "face": "8.00",
+            "figure": "8.00",
+            "tits": "7.00",
+            "ass": "10.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 127,
+        "fields": {
+            "user": 12,
+            "article": 18,
+            "face": "7.00",
+            "figure": "6.00",
+            "tits": "10.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 128,
+        "fields": {
+            "user": 12,
+            "article": 1,
+            "face": "8.00",
+            "figure": "7.00",
+            "tits": "6.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 129,
+        "fields": {
+            "user": 12,
+            "article": 32,
+            "face": "6.00",
+            "figure": "9.00",
+            "tits": "9.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 130,
+        "fields": {
+            "user": 12,
+            "article": 25,
+            "face": "8.00",
+            "figure": "7.00",
+            "tits": "7.00",
+            "ass": "7.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 131,
+        "fields": {
+            "user": 12,
+            "article": 15,
+            "face": "10.00",
+            "figure": "7.00",
+            "tits": "6.00",
+            "ass": "6.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 132,
+        "fields": {
+            "user": 12,
+            "article": 35,
+            "face": "9.00",
+            "figure": "8.00",
+            "tits": "7.00",
+            "ass": "8.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 133,
+        "fields": {
+            "user": 12,
+            "article": 36,
+            "face": "10.00",
+            "figure": "9.00",
+            "tits": "7.00",
+            "ass": "10.00"
+        }
+    },
+    {
+        "model": "scores.articlerating",
+        "pk": 134,
+        "fields": {
+            "user": 12,
+            "article": 41,
+            "face": "9.00",
+            "figure": "9.00",
+            "tits": "7.00",
+            "ass": "9.00"
+        }
+    }
+]

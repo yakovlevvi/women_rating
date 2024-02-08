@@ -2,6 +2,8 @@ from django.urls import path, include
 from .views import *
 from scores.views import ShowPost
 
+app_name = 'users'
+
 urlpatterns = [
     path('', user_list, name='user_list'),
     path('user_ratings_list/', UserScores.as_view(), name='user_ratings_list'),
