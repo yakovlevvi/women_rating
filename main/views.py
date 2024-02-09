@@ -37,7 +37,7 @@ class ContactFormView(DataMixin, FormView):
 
 class RegisterUser(DataMixin, CreateView):
     form_class = CustomUserCreationForm
-    template_name = 'main/register.html'
+    template_name = 'users/register.html'
     success_url = reverse_lazy('login')
 
     def get_context_data(self, *, object_list=None, **kwargs):
@@ -54,7 +54,7 @@ class RegisterUser(DataMixin, CreateView):
 
 class LoginUser(DataMixin, LoginView):
     form_class = LoginUserForm
-    template_name = 'main/login.html'
+    template_name = 'users/login.html'
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)

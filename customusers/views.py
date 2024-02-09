@@ -8,7 +8,7 @@ from scores.utils import *
 
 def user_list(request):
     users = TopUser.objects.all()
-    return render(request, 'scores/user_list.html', {'users': users})
+    return render(request, 'users/user_list.html', {'users': users})
 
 
 class ShowUser(DataMixin, DetailView):
@@ -26,7 +26,7 @@ class ShowUser(DataMixin, DetailView):
 
 class UserScores(DataMixin, ListView):
     model = TopUser
-    template_name = 'customusers/user_ratings_list.html'
+    template_name = 'users/user_ratings_list.html'
     context_object_name = 'users'
 
     def get_queryset(self):
@@ -51,7 +51,7 @@ class UserScores(DataMixin, ListView):
 
 class UserProfileView(DataMixin, DetailView):
     model = TopUser
-    template_name = 'customusers/user_profile.html'
+    template_name = 'users/user_profile.html'
     context_object_name = 'user'
     slug_url_kwarg = 'username'
 
@@ -75,7 +75,7 @@ class UserProfileView(DataMixin, DetailView):
 
 class ProfileView(DataMixin, DetailView):
     model = TopUser
-    template_name = 'customusers/profile.html'
+    template_name = 'users/profile.html'
     context_object_name = 'user'
     slug_url_kwarg = 'username'
 
