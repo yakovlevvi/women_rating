@@ -1,6 +1,6 @@
 [
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 1,
         "fields": {
             "password": "pbkdf2_sha256$600000$CJrNCgg2W9NwYzlCoWOZVI$PKx7Rm2/KO0V3YNADhWHeto9Rnhu3qu4wLno0vTvjnQ=",
@@ -19,7 +19,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 4,
         "fields": {
             "password": "pbkdf2_sha256$216000$uqJt6N0M2BwN$0NBnqxhCWNOGvnJsHhVrjM+Tp2lCc+oid6iF5Hq0qOg=",
@@ -38,7 +38,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 5,
         "fields": {
             "password": "pbkdf2_sha256$216000$zQofVNWWWswh$fC6RPqRKcrBicl0yz/BHqwGnkb/E5PU5+oa2SMC3j8g=",
@@ -57,7 +57,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 6,
         "fields": {
             "password": "pbkdf2_sha256$216000$uVEzsczWVfM2$KzHm4Y7mCIw/YJQ676ovGX3h4VPBWrF47p98U556srs=",
@@ -76,7 +76,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 7,
         "fields": {
             "password": "pbkdf2_sha256$216000$XI0SxX1a7Vis$HepMsMQyApEuYPduapJ9YzA20MyXcGEeU4ODdoSXO+4=",
@@ -95,7 +95,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 9,
         "fields": {
             "password": "pbkdf2_sha256$216000$M0wx53BdLpIJ$rxZPSZk4M7dPV7IlOuybITp/Wim2i30m0HK6DSUAb+0=",
@@ -114,7 +114,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 10,
         "fields": {
             "password": "pbkdf2_sha256$216000$bWqZO9lm91E3$s/JOJivYJiOydXVk6yNOr8Dxbgn3n0q8PN1BrIzJi+o=",
@@ -133,7 +133,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 11,
         "fields": {
             "password": "pbkdf2_sha256$216000$vNJGoBR71TO4$Z46Aj1m7T0WgQH7oPNnz7wJsAqeKIKt/XMURo78FkYE=",
@@ -152,7 +152,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 12,
         "fields": {
             "password": "pbkdf2_sha256$216000$WklqDGNAAWtA$O/7DykrgawMfIdzZ/B2LcXUpLIBpawOvfm3g/dGDc6c=",
@@ -171,7 +171,7 @@
         }
     },
     {
-        "model": "scores.topuser",
+        "model": "customusers.user",
         "pk": 13,
         "fields": {
             "password": "pbkdf2_sha256$600000$a7gKPJQkjxSbQ4b5iQDMD5$Y9NWfUjrQxn7avQ7hAUejMfY2J3FT32pbrIgshFMdYg=",

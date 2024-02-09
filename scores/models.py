@@ -1,7 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db import models
 from django.urls import reverse
-from django.contrib.auth.models import AbstractUser
 
 
 class Category(models.Model):
@@ -18,13 +17,6 @@ class Category(models.Model):
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
         ordering = ['id']
-
-
-class TopUser(AbstractUser):
-    profile_image = models.URLField('Фото', max_length=200, null=True, blank=True)
-
-    def get_absolute_url(self):
-        return reverse('user_scores', args=[str(self.username)])
 
 
 class Article(models.Model):
@@ -69,5 +61,3 @@ class ArticleRating(models.Model):
     class Meta:
         verbose_name = 'Оценка'
         verbose_name_plural = 'Оценки'
-
-

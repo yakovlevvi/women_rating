@@ -26,10 +26,10 @@
                 <a href="{% url 'chat' %}"><li><button class="btn btn-danger">ЧАТ</button></li></a>
                 <a href="{% url 'upload_member' %}"><li><button class="btn btn-info"><i class="fa-solid fa-plus-circle"></i> Добавить</button></li></a>
                 <li> {{ user.username }} </li>
-                <a href="{% url 'logout' %}"><li><button class="btn btn-danger">Выйти</button></li></a>
+                <a href="{% url 'users:logout' %}"><li><button class="btn btn-danger">Выйти</button></li></a>
             {% else %}
-                <a href="{% url 'register' %}"><li><button class="btn btn-warning">Регистрация</button></li></a>
-                <a href="{% url 'login' %}"><li><button class="btn btn-danger">Войти</button></li></a>
+                <a href="{% url 'users:register' %}"><li><button class="btn btn-warning">Регистрация</button></li></a>
+                <a href="{% url 'users:login' %}"><li><button class="btn btn-danger">Войти</button></li></a>
             {% endif %}
         </ul>
     </aside>

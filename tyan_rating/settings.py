@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     "daphne",
+    "channels",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -46,7 +47,6 @@ INSTALLED_APPS = [
     "customusers.apps.CustomusersConfig",
     "chat.apps.ChatConfig",
     "captcha",
-    "channels",
 ]
 
 MIDDLEWARE = [
@@ -147,4 +147,4 @@ LOGIN_URL = 'users:login'
 
 CHANNEL_LAYERS = {"default": {"BACKEND": "channels.layers.InMemoryChannelLayer"}}
 
-AUTH_USER_MODEL = "scores.TopUser"
+AUTH_USER_MODEL = "customusers.User"

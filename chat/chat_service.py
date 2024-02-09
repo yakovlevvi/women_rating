@@ -3,7 +3,7 @@ from asgiref.sync import sync_to_async
 from channels.generic.websocket import AsyncWebsocketConsumer
 
 from .models import Messages
-from scores.models import TopUser
+from customusers.models import User
  
 
 class ChatService(AsyncWebsocketConsumer):
@@ -20,8 +20,8 @@ class ChatService(AsyncWebsocketConsumer):
         return super().disconnect(close_code)
 
     @sync_to_async
-    def save_message(self, user_id: int, message: str) -> TopUser:
-        user_instance = TopUser.objects.get(id=user_id)
+    def save_message(self, user_id: int, message: str) -> User:
+        user_instance = User.objects.get(id=user_id)
         Messages.objects.create(
             author=user_instance,
             text=message
