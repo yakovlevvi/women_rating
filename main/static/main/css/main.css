@@ -1,72 +1,49 @@
+@import "tyan-card.css";
+@import "aside.css";
+@import "list-pages.css";
+@import "users.css";
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: rgba(245, 227, 179, 1); /* Цвет фона с прозрачностью (здесь rgba значит Red, Green, Blue и Alpha) */
-    background-image: url('https://wp-s.ru/wallpapers/13/8/508263849466057/devushka-indeec-s-kop-m-na-zh-ltom-fone.jpg');
-    background-repeat: no-repeat;
+    background: rgba(245, 227, 179, 1) url('https://wp-s.ru/wallpapers/13/8/508263849466057/devushka-indeec-s-kop-m-na-zh-ltom-fone.jpg') no-repeat;
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
 }
 
-aside img {
-    width: 120px;
-    display: block;
-    margin: 50px auto;
-}
-
-aside h3 {
-    font-size: 28px;
-}
-
-aside ul {
-    list-style: none;
-    text-align: left;
-}
-
-aside ul li {
-    color: #000;
-    display: block;
-    margin-top: 10px;
-    transition: transform .2s ease;
-}
-
-aside ul a {
-    text-decoration: none;
-}
-
-aside ul li:hover, aside ul a:hover {
-    color: #2A316E;
-    display: block;
-    margin-top: 10px;
-    transform: scale(1.05);
-}
-
-aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #B8AE93;
-    width: 250px;
-    padding: 0;
-    height: 100%;
-    color: #000;
-    border-right: 5px solid #9F843A;
-    text-align: center;
-}
-
 main {
     margin-left: 255px;
-    padding: 20px;
-    padding-top: 100px;
+    padding: 50px;
     text-align: center;
 }
 
-main .features h1 {
+.page-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.page-content__image {
+    max-width: 300px;
+    margin: 0 auto 30px;
+}
+
+.page-content h1 {
     font-size: 50px;
 }
 
-main .features p {
+.page-content p {
     max-width: 400px;
     margin: 2px auto;
     font-size: 18px;
@@ -80,17 +57,6 @@ main .features p {
     text-align: center;
 }
 
-.tyan-photo {
-    width: 350px;
-    margin: auto;
-    border-radius: 8px;
-}
-
-.post-image {
-    width: 500px;
-    margin: auto;
-}
-
 form {
     width: 500px;
     margin: 50px auto;
@@ -100,54 +66,19 @@ form {
     margin: 10px;
 }
 
-.card {
-    background: rgba(184, 174, 147, 0.9);
-    width: 500px;
-    margin: 20px auto;
-    padding: 10px;
+.tyans {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
 }
 
-.list-pages {
-	text-align: center;
-	margin: 0 0 0 0;
+.tyans__item {
+    width: calc(33.33% - 30px);
 }
 
-.list-pages ul {
-	margin: 0 0 0 0;
-	padding: 0;
-	list-style: none;
-}
-.list-pages ul li {
-	display: inline-block;
-	margin: 0 0 0 0;
-	display: flex;
-}
-.list-pages a {
-	color: #000;
-	font-size: 24px;
-	text-decoration: none;
-}
-.list-pages .page-num, .page-num-selected {
-	display: inline-block;
-	width: 60px;
-	height: 44px;
-	padding: 0;
-	border: 1px solid #d0d0d0;
-	border-radius: 30px;
-	transition: transform .2s ease;
-}
-.list-pages .page-num:hover {
-	box-shadow: 3px 3px 1px #d0d0d0;
-	transform: scale(1.05);
-}
-.list-pages .page-num-selected {
-	border: none;
-	color: #000;
-	font-size: 20px;
-}
-.list-pages .page-num-selected:hover {
-	box-shadow: none;
-}
+
 
 .selected {
     color: grey;
@@ -160,37 +91,15 @@ form {
 
 .categories {
   text-align: center;
-  margin: 0;
   padding: 0;
   font-size: 18px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto 30px;
 }
 
-.users {
-    text-align: center;
-    margin: auto;
-    font-size: 24px;
-}
 
-.user {
-    list-style: none;
-    background: rgba(184, 174, 147, 0.9);
-    margin: 10px auto;
-    border-radius: 16px;
-    padding: 10px;
-    width: 300px;
-    border: 1px solid rgba(159, 132, 58, 0.5);
-    text-decoration: none;
-}
-
-.profile-image {
-    width: 200px;
-    margin: auto;
-    border-radius: 8px;
-}
-
-.rating {
-    color: black;
-}
 
 .login_note {
     color: #675113;

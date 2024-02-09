@@ -1,0 +1,20 @@
+.tyan-card {
+    background: rgba(184, 174, 147, 0.9);
+    padding: 20px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tyan-card__photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    position: top;
+    margin: auto;
+}
+
+.tyan-card__rating {
+    color: black;
+}

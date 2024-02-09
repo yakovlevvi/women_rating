@@ -3,13 +3,19 @@
 {% block title %}Список пользователей{% endblock %}
 
 {% block content %}
-    <div class="features">
+    <div class="page-content">
         <h1>Список пользователей</h1>
         <ul class="users">
             {% for user in users %}
-                <li class="user"><a class='user-link' href="{% url 'users:user_profile' user.username %}"><img class="profile-image" src="{{ user.profile_image }}" alt=""><br>{{ user.username }}</li></a>
+                <li class="users__item">
+                    <div class="user-card">
+                        <a class='user-card__link' href="{% url 'users:user_profile' user.username %}">
+                            <img class="user-card__image" src="{{ user.profile_image }}" alt="">
+                            <p class="user-card__name">{{ user.username }}</p>
+                        </a>
+                    </div>
+                </li>
             {% endfor %}
         </ul>
-
     </div>
 {% endblock %}

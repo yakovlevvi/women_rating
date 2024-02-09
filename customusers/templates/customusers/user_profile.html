@@ -1,23 +1,28 @@
 {% extends 'main/layout.html' %}
 {% load scores_tags %}
 
-{% block title %}{{ user.username }}{% endblock %}
+{% block title %}Чарт {{ user.username }}{% endblock %}
 
 {% block content %}
-    <div class="features">
+    <div class="page-content">
         <h1>{{ user.username }}</h1>
-        <img class="profile-image" src="{{ user.profile_image }}" alt=""><br><br>
+        <img class="user-card__image page-content__image" src="{{ user.profile_image }}" alt="{{user.username}}">
 
     <h2>ЧАРТ</h2>
     {% if average_ratings.items %}
-    {% for article, avg_rating in average_ratings.items %}
-        <div class="card">
-        <h2>{{ article.name }}</h2>
-        <p>Возраст: {{ article.age }}</p>
-        <img class='tyan-photo' src="{{ article.photo }}">
-        <h3 class="rating">{{ avg_rating|floatformat:2 }}</h3>
-        </div>
-    {% endfor %}
+    <ul class="tyans">
+        {% for article, avg_rating in average_ratings.items %}
+            <li class="tyans__item">
+                <div class="tyan-card">
+                <h2>{{ article.name }}</h2>
+                <p>Возраст: {{ article.age }}</p>
+                <img class='tyan-card__photo' src="{{ article.photo }}">
+                <h3 class="tyan-card__rating">{{ avg_rating|floatformat:2 }}</h3>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    
     {% if page_obj.has_other_pages %}
             <nav class="list-pages">
                 <ul>
