@@ -4,9 +4,9 @@
 {% block title %}{{ article.name }}{% endblock %}
 
 {% block content %}
-  <div class="features">
+  <div class="page-content">
     <h2>{{ article.name }}</h2>
-    <img class='tyan-photo' src="{{ article.photo }}">
+    <img class='tyan-card__photo page-content__image' src="{{ article.photo }}">
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}

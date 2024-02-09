@@ -1,10 +1,10 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Добавление участника ТОПа{% endblock %}
+{% block title %}Добавление{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Добавление тяночки</h1>
+        <h1>Добавление</h1>
         <form method="post">
             {% csrf_token %}  <!-- для безопасной передачи данных -->
             <p class="label">Имя</p>

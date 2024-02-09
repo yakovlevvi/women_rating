@@ -8,3 +8,4 @@ __pycache__
 *.mp4
 .pytest_cache
 *.sqlite3
+*.json

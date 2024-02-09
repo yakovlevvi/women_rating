@@ -25,9 +25,9 @@ class CustomUserChangeForm(UserChangeForm):
 
 
 class LoginUserForm(AuthenticationForm):
-    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'username'}))
-    password = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': '********'}))
-
+    class Meta:
+        model = TopUser
+        fields = ['username', 'password']
 
 
 

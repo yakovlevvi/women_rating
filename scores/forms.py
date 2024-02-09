@@ -1,4 +1,5 @@
 from django import forms
+from django.forms import widgets
 from django.utils.text import slugify
 
 from .models import *
@@ -29,6 +30,9 @@ class TyanForm(forms.ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Ссылка на фото',
             }),
+            'cat': forms.Select(attrs={
+                'class': 'form-control'
+            })
         }
 
     def save(self, commit=True):
@@ -50,14 +54,14 @@ class TyanForm(forms.ModelForm):
 
 
 class ArticleRatingForm(forms.ModelForm):
-    face = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
-                              label='Лицо')
-    figure = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
-                                label='Фигура')
-    tits = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
-                              label='Тема сисек')
-    ass = forms.DecimalField(min_value=0, max_value=10, decimal_places=2, max_digits=5, required=True,
-                             label='Жопа')
+    face = forms.DecimalField(min_value=0, max_value=10, decimal_places=1, max_digits=5, required=True,
+                              label='Лицо', widget=forms.NumberInput(attrs={'class': 'form-control'}))
+    figure = forms.DecimalField(min_value=0, max_value=10, decimal_places=1, max_digits=5, required=True,
+                                label='Фигура', widget=forms.NumberInput(attrs={'class': 'form-control'}))
+    tits = forms.DecimalField(min_value=0, max_value=10, decimal_places=1, max_digits=5, required=True,
+                              label='Тема сисек', widget=forms.NumberInput(attrs={'class': 'form-control'}))
+    ass = forms.DecimalField(min_value=0, max_value=10, decimal_places=1, max_digits=5, required=True,
+                             label='Жопа', widget=forms.NumberInput(attrs={'class': 'form-control'}))
 
     class Meta:
         model = ArticleRating

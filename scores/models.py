@@ -54,10 +54,10 @@ class Article(models.Model):
 class ArticleRating(models.Model):
     user = models.ForeignKey(get_user_model(), on_delete=models.PROTECT, related_name='ratings')
     article = models.ForeignKey("Article", on_delete=models.PROTECT)
-    face = models.DecimalField('Лицо', max_digits=5, decimal_places=2, default=0.0)
-    figure = models.DecimalField('Фигура', max_digits=5, decimal_places=2, default=0.0)
-    tits = models.DecimalField('Тема сисек', max_digits=5, decimal_places=2, default=0.0)
-    ass = models.DecimalField('Жопа', max_digits=5, decimal_places=2, default=0.0)
+    face = models.DecimalField('Лицо', max_digits=5, decimal_places=1, default=0.0)
+    figure = models.DecimalField('Фигура', max_digits=5, decimal_places=1, default=0.0)
+    tits = models.DecimalField('Тема сисек', max_digits=5, decimal_places=1, default=0.0)
+    ass = models.DecimalField('Жопа', max_digits=5, decimal_places=1, default=0.0)
 
     @property
     def avg_rating(self):
