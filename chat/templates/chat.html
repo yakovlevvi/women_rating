@@ -1,86 +1,80 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}ЧАТ{% endblock %}
+{% block title %}
+  ЧАТ
+{% endblock %}
 
 {% block content %}
-    <h1>Добро пожаловать в чат, {{request.user}}!</h1>
-    <br>
-    <div
-      class="chat__item__container"
-      id="id_chat_item_container"
-      style="font-size: 20px"
-    >
-      <br />
-      <input type="text" id="id_message_send_input" class="form-control"/>
-      <button type="submit" id="id_message_send_button" class="btn btn-success">Отправить</button>
-      <br />
-      <br />
-    </div>
-    <script>
-      const chatSocket = new WebSocket("ws://" + window.location.host + "/");
-      chatSocket.onopen = function (e) {
-        console.log("The connection was setup successfully !");
-        getChatHistory();
-      };
-      chatSocket.onclose = function (e) {
-        console.log("Something unexpected happened !");
-      };
-      document.querySelector("#id_message_send_input").focus();
-      document.querySelector("#id_message_send_input").onkeyup = function (e) {
-        if (e.keyCode == 13) {
-          document.querySelector("#id_message_send_button").click();
-        }
-      };
-      function getChatHistory() {
-        fetch('get_last_messages') // Замените на актуальный URL вашего представления
-        .then(response => response.json())
-        .then(data => {
-            // data содержит историю сообщений
-            if (data.messages && Array.isArray(data.messages)) {
-                data.messages.forEach(message => {
-                    displayMessage(message.author, message.message, message.created_at);
-                });
-            }
-        })
-        .catch(error => {
-            console.error('Ошибка при получении истории сообщений: ' + error);
-        });
+  <h1 class="mb-3">Добро пожаловать в чат, {{ request.user }}!</h1>
+  <div class="chat__item__container" id="id_chat_item_container" style="font-size: 20px">
+    <input type="text" id="id_message_send_input" class="form-control mb-3" required />
+    <button type="submit" id="id_message_send_button" class="btn btn-success mb-3">Отправить</button>
+  </div>
+  <script>
+    const chatSocket = new WebSocket('ws://' + window.location.host + '/')
+    chatSocket.onopen = function (e) {
+      console.log('The connection was setup successfully !')
+      getChatHistory()
+    }
+    chatSocket.onclose = function (e) {
+      console.log('Something unexpected happened !')
+    }
+    document.querySelector('#id_message_send_input').focus()
+    document.querySelector('#id_message_send_input').onkeyup = function (e) {
+      if (e.keyCode == 13) {
+        document.querySelector('#id_message_send_button').click()
       }
+    }
+    function getChatHistory() {
+      fetch('get_last_messages') // Замените на актуальный URL вашего представления
+        .then((response) => response.json())
+        .then((data) => {
+          // data содержит историю сообщений
+          if (data.messages && Array.isArray(data.messages)) {
+            data.messages.forEach((message) => {
+              displayMessage(message.author, message.message, message.created_at)
+            })
+          }
+        })
+        .catch((error) => {
+          console.error('Ошибка при получении истории сообщений: ' + error)
+        })
+    }
     function displayMessage(username, message, created_at) {
-  var div = document.createElement("div");
-  var messageText = username + " : " + message;
-  if (created_at) {
-    // Форматируем дату и время
-    var createdAtDate = new Date(created_at);
-    var formattedCreatedAt = createdAtDate.toLocaleString(); // Используйте желаемый формат
-    messageText += " (" + formattedCreatedAt + ")";
-  }
-  div.innerHTML = messageText;
-  document.querySelector("#id_message_send_input").value = "";
-  document.querySelector("#id_chat_item_container").appendChild(div);
-}
-
-  document.querySelector("#id_message_send_button").onclick = function (e) {
-    var messageInput = document.querySelector("#id_message_send_input").value;
-    var created_at = new Date().toISOString();
-    chatSocket.send(JSON.stringify({
-      message: messageInput,
-      username : "{{request.user.username}}",
-      user_id: "{{request.user.id}}",
-      created_at: '{{request.user.created_at}}'
-    }));
-  };
-      chatSocket.onmessage = function (e) {
-  const data = JSON.parse(e.data);
-  var div = document.createElement("div");
-  div.innerHTML = data.username + " : " + data.message;
-  if (data.created_at) {
-    var createdAtDate = new Date(data.created_at);
-    var formattedCreatedAt = createdAtDate.toLocaleString(); // Используйте желаемый формат
-    div.innerHTML += " (отправлено " + formattedCreatedAt + ")";
-  }
-  document.querySelector("#id_message_send_input").value = "";
-  document.querySelector("#id_chat_item_container").appendChild(div);
-};
-    </script>
+      var div = document.createElement('div')
+      var messageText = username + ' : ' + message
+      if (created_at) {
+        // Форматируем дату и время
+        var createdAtDate = new Date(created_at)
+        var formattedCreatedAt = createdAtDate.toLocaleString() // Используйте желаемый формат
+        messageText += ' (' + formattedCreatedAt + ')'
+      }
+      div.innerHTML = messageText
+      document.querySelector('#id_message_send_input').value = ''
+      document.querySelector('#id_chat_item_container').appendChild(div)
+    }
+    
+    document.querySelector('#id_message_send_button').onclick = function (e) {
+      var messageInput = document.querySelector('#id_message_send_input').value
+      var created_at = new Date().toISOString()
+      chatSocket.send(
+        JSON.stringify({
+          message: messageInput,
+          username: '{{request.user.username}}',
+          user_id: '{{request.user.id}}',
+          created_at: '{{request.user.created_at}}'
+        })
+      )
+    }
+    chatSocket.onmessage = function (e) {
+      const data = JSON.parse(e.data)
+      var div = document.createElement('div')
+      var createdAtDate = new Date()
+      var formattedCreatedAt = createdAtDate.toLocaleString()
+      div.innerHTML = data.username + ' : ' + data.message + ' (' + formattedCreatedAt + ')'
+    
+      document.querySelector('#id_message_send_input').value = ''
+      document.querySelector('#id_chat_item_container').appendChild(div)
+    }
+  </script>
 {% endblock %}

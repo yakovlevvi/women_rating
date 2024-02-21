@@ -9,9 +9,9 @@
 
 .tyan-card__photo {
     width: 100%;
+    min-height: 250px;
     height: auto;
     border-radius: 8px;
-    position: top;
     margin: auto;
 }
 
