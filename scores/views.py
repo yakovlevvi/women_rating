@@ -91,6 +91,7 @@ class ScoresCategory(DataMixin, ListView):
 class ScoresUpdateView(UpdateView):
     model = ArticleRating
     template_name = 'scores/rate_article.html'
+    success_url = reverse_lazy('article_list')
     form_class = ArticleRatingForm
 
     def get_object(self, queryset=None):
@@ -117,12 +118,11 @@ class ScoresUpdateView(UpdateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['article'] = self.object.article
+        context['face_value'] = self.object.face
+        context['figure_value'] = self.object.figure
+        context['tits_value'] = self.object.tits
+        context['ass_value'] = self.object.ass
         return context
-
-    def get_success_url(self):
-        # Здесь вы можете указать URL-адрес, куда перенаправить пользователя
-        # Например, перенаправить обратно на страницу статьи
-        return reverse('article_list')
 
 
 class ScoresDeleteView(DeleteView):

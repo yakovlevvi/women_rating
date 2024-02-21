@@ -6,13 +6,60 @@
 {% block content %}
   <div class="page-content">
     <h2>{{ article.name }}</h2>
-    <img class='tyan-card__photo page-content__image' src="{{ article.photo }}">
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-success" type="submit">Сохранить оценку</button>
-    </form>
-
-    <a href="{% url 'article_list' %}">Назад в ТОП</a>
+    <img class="tyan-card__photo page-content__image" src="{{ article.photo }}">
+    <form class="form" method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+          <label for="id_face" class="form-label">Лицо - <output id="face-value">{{ face_value }}</output></label>
+          <input type="range" min="0" max="10" step="0.1" class="form-control" value="{{ face_value|replace_comma_with_dot }}" name="face" id="id_face" 
+          placeholder="Оценка за лицо" required>
+      </div>
+      <div class="mb-3">
+          <label for="id_figure" class="form-label">Фигура - <output id="figure-value">{{ figure_value }}</label>
+          <input type="range" min="0" max="10" step="0.1" class="form-control" value="{{ figure_value|replace_comma_with_dot }}" name="figure" id="id_figure" 
+          placeholder="Оценка за фигуру" required>
+      </div>
+      <div class="mb-3">
+          <label for="id_tits" class="form-label">Тема сисек - <output id="tits-value">{{ tits_value }}</label>
+          <input type="range" min="0" max="10" step="0.1" class="form-control" value="{{ tits_value|replace_comma_with_dot }}" name="tits" id="id_tits" 
+          placeholder="Оценка за сиськи" required>
+      </div>
+      <div class="mb-3">
+          <label for="id_ass" class="form-label">Жопа - <output id="ass-value">{{ ass_value }}</label>
+          <input type="range" min="0" max="10" step="0.1" class="form-control" value="{{ ass_value|replace_comma_with_dot }}" name="ass" id="id_ass" 
+          placeholder="Оценка за жопу" required>
+      </div>  
+      <button type="submit" class="btn btn-success">Сохранить оценку</button> 
+  </form>
+    <a class="btn btn-info" href="{% url 'article_list' %}">Назад в ТОП</a>
   </div>
+  <script>
+    const faceValue = document.querySelector("#face-value");
+    const faceInput = document.querySelector("#id_face");
+    faceValue.textContent = faceInput.value;
+    faceInput.addEventListener("input", (e) => {
+      faceValue.textContent = e.target.value;
+    })
+
+    const figureValue = document.querySelector("#figure-value");
+    const figureInput = document.querySelector("#id_figure");
+    figureValue.textContent = figureInput.value;
+    figureInput.addEventListener("input", (e) => {
+      figureValue.textContent = e.target.value;
+    })
+
+    const titsValue = document.querySelector("#tits-value");
+    const titsInput = document.querySelector("#id_tits");
+    titsValue.textContent = titsInput.value;
+    titsInput.addEventListener("input", (e) => {
+      titsValue.textContent = e.target.value;
+    })
+
+    const assValue = document.querySelector("#ass-value");
+    const assInput = document.querySelector("#id_ass");
+    assValue.textContent = assInput.value;
+    assInput.addEventListener("input", (e) => {
+      assValue.textContent = e.target.value;
+    })
+  </script>
 {% endblock %}

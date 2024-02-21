@@ -57,4 +57,3 @@ class ArticleRatingForm(forms.ModelForm):
     class Meta:
         model = ArticleRating
         fields = ['face', 'figure', 'tits', 'ass']
-

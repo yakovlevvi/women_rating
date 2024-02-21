@@ -116,3 +116,9 @@ form {
     display: block;
     transform: scale(1.05);
 }
+
+.form-label {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}

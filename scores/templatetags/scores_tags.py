@@ -24,3 +24,7 @@ def show_categories(sort=None, cat_selected=0):
 @register.filter
 def has_rated(article, user):
     return article.ratings.filter(id=user.id).exists()
+
+@register.filter
+def replace_comma_with_dot(value):
+    return str(value).replace(',', '.')
